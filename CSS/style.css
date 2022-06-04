@@ -1,0 +1,105 @@
+body{
+    background-color:#030c26;
+    height: auto;
+    width:auto;
+    font-family: 'Koulen', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    height: 5%;
+    width:5%;
+    text-align: right;
+    opacity:0.5;
+}
+
+.navegador{
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    margin: 30px;
+    width: 5%;
+    height:5%;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: beige;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:aquamarine;
+    text-decoration:underline;
+}
+
+.container{
+    margin: 200px;
+    text-align: center;
+    color:beige;
+}
+
+#boton-iniciar{
+    height:50px;
+    width:15%;
+    background-color: #cccccc;
+    margin:20px;
+    font-size:larger;
+    border-radius:10px;
+    font-family: 'Koulen', cursive;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s all;
+
+}
+
+#boton-iniciar:hover{
+    background:black;
+    transform: scale(1.2);
+    color: white;
+}
+
+#boton-agregar{
+    height:50px;
+    width:15%;
+    background-color: #cccccc;
+    margin:20px;
+    font-size:larger;
+    border-radius:10px;
+    font-family: 'Koulen', cursive;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s all;
+
+}
+
+#boton-agregar:hover{
+    background:black;
+    transform: scale(1.2);
+    color: white;
+}
+
+
+
+.pie-pagina{
+    height:auto;
+    text-align:center;
+    color:white;
+}
+
+@media screen and (max-width=480px){
+    body{
+        align-content: center;
+        width: 350px;
+    }
+  
+    .navegador{
+      width:auto;
+      text-align: center;
+  }
+  nav li{
+      margin:15px;
+  }
+}
