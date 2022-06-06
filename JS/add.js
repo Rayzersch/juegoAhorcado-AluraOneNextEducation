@@ -7,6 +7,7 @@ botonComenzar.addEventListener("click", function () {
  let upper = char.toUpperCase();
  if(upper.length <= 8 && /[A-Z]/g.test(upper)){
   addWord(upper);
+  window.location.href = "/game.html"
  } else{
    alert("Maximo 8 caracteres")
  }
