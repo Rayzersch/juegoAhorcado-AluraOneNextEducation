@@ -1,115 +1,204 @@
-body{
-    background-color:#030c26;
-    height: auto;
-    width:auto;
-    font-family: 'Koulen', cursive;
-    font-family: 'Montserrat', sans-serif;
+body {
+  background-color: #030c26;
+  height: auto;
+  width: auto;
+  font-family: "Koulen", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
-img{
-    height: 5%;
-    width:5%;
-    text-align: right;
-    opacity:0.5;
+img {
+  height: 5%;
+  width: 5%;
+  text-align: right;
+  opacity: 0.5;
 }
 
-.navegador{
-    text-align: center;
+.navegador {
+  text-align: center;
 }
 
-nav li{
-    text-align: center;
-    display: inline-block;
-    margin: 30px;
-    width: 5%;
-    height:5%;
+nav li {
+  text-align: center;
+  display: inline-block;
+  margin: 30px;
+  width: 5%;
+  height: 5%;
 }
 
-nav a{
-    text-transform: uppercase;
-    color: beige;
-    font-weight: bold;
-    font-size: 30px;
-    text-decoration: none;
+nav a {
+  text-transform: uppercase;
+  color: beige;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
 }
 
-nav a:hover{
-    color:aquamarine;
-    text-decoration:underline;
+nav a:hover {
+  color: aquamarine;
+  text-decoration: underline;
 }
 
-.container{
+.container {
   margin: 20px;
-    text-align: center;
+  text-align: center;
 }
 
 .ingreso-texto {
-    color: white;
-    font-weight: bold;
-    font-size: 1.5em;
-    font-family: 'Koulen', cursive;
-    font-family: 'Montserrat', sans-serif;
-    width: 50%;
-    margin: 0px 10px 30px 20px;
-    padding-bottom: 200px;
-    background-color: transparent;
-    border-radius: 10px;
-    border-color: beige;
-    resize: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: "Koulen", cursive;
+  font-family: "Montserrat", sans-serif;
+  width: 50%;
+  margin: 0px 10px 30px 20px;
+  padding-bottom: 200px;
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: beige;
+  resize: none;
+}
+
+.ingreso-texto::placeholder {
+  font-size: 1.5em;
+  font-family: "Koulen", cursive;
+  font-family: "Montserrat", sans-serif;
+}
+
+.regla {
+  color: wheat;
+}
+
+.boton-guardado {
+  height: 50px;
+  width: 15%;
+  background-color: #cccccc;
+  margin: 20px;
+  font-size: larger;
+  border-radius: 10px;
+  font-family: "Koulen", cursive;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s all;
+}
+
+.boton-guardado:hover {
+  background: black;
+  transform: scale(1.2);
+  color: white;
+}
+
+.boton-cancelado {
+  height: 50px;
+  width: 15%;
+  background-color: #cccccc;
+  margin: 20px;
+  font-size: larger;
+  border-radius: 10px;
+  font-family: "Koulen", cursive;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s all;
+}
+
+.boton-cancelado:hover {
+  background: black;
+  transform: scale(1.2);
+  color: white;
+}
+
+.pie-pagina {
+  height: auto;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    align-content: center;
+    width: 350px;
+    height: 800px;
   }
 
-  .ingreso-texto::placeholder {
-    font-size: 1.5em;
-    font-family: 'Koulen', cursive;
-    font-family: 'Montserrat', sans-serif;
+  img {
+    height: 2%;
   }
 
-  .regla{
-      color: wheat;
+  .navegador {
+    margin-bottom: 0%;
+    margin-right: 80px;
+  }
+  nav li {
+    margin: 54px;
   }
 
-.boton-guardado{
-    height:50px;
-    width:15%;
-    background-color: #cccccc;
-    margin:20px;
-    font-size:larger;
-    border-radius:10px;
-    font-family: 'Koulen', cursive;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.5s all;
+  .container {
+    margin: 10px;
+  }
 
+  .ingreso-texto {
+    margin: 0px;
+    width: 70%;
+    padding-bottom: 50px;
+  }
+  .botones {
+    display: flex;
+    margin-left: 50px;
+  }
+  #boton-guardar {
+    font-size: medium;
+    width: 100px;
+    height: 52px;
+    margin: 10px;
+  }
+  #boton-cancelar {
+    width: 100px;
+    height: 52px;
+    margin: 10px;
+  }
+  .pie-pagina {
+    margin-left: 20px;
+  }
 }
 
-.boton-guardado:hover{
-    background:black;
-    transform: scale(1.2);
-    color: white;
+@media screen and (max-width: 960px), (min-width: 481) {
+  body {
+    align-content: center;
+    width: 840px;
+    height: 800px;
+  }
+
+  .navegador {
+    margin-bottom: 0%;
+    margin-right: 80px;
+  }
+  nav li {
+    margin: 54px;
+  }
+
+  .container {
+    margin: 10px;
+  }
+
+  .ingreso-texto {
+    margin: 10px;
+    margin-left: 20px;
+    width: 70%;
+    padding-bottom: 50px;
+  }
+  .botones {
+    display: flex;
+    margin-left: 295px;
+  }
+  #boton-guardar {
+    font-size: medium;
+    width: 100px;
+    height: 52px;
+    margin: 10px;
+  }
+  #boton-cancelar {
+    width: 100px;
+    height: 52px;
+    margin: 10px;
+  }
+  .pie-pagina {
+    margin-left: 20px;
+  }
 }
-
-.boton-cancelado{
-    height:50px;
-    width:15%;
-    background-color: #cccccc;
-    margin:20px;
-    font-size:larger;
-    border-radius:10px;
-    font-family: 'Koulen', cursive;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.5s all;
-
-}
-
-.boton-cancelado:hover{
-    background:black;
-    transform: scale(1.2);
-    color: white;
-}
-
-.pie-pagina{
-    height:auto;
-    text-align:center;
-    color:white;
-}
-
-
